@@ -50,11 +50,11 @@ function getWeightsData() {
  * Calculates and displays the total weight of selected plates.
  */
 totalWeightsBtn.addEventListener("click", () => {
-  const weightsData = getWeightsData(); // ~ Retrieve weights data
+  const currentWeightsData = getWeightsData(); // ~ Retrieve weights data
   let totalWeight = 0;
 
   // ~ Calculate total weight by multiplying each weight by its amount
-  weightsData.forEach((element) => {
+  currentWeightsData.forEach((element) => {
     totalWeight += element.weight * element.amount;
   });
 
