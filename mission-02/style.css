@@ -1,0 +1,208 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height for centering */
+}
+
+/* Container for the entire calculator */
+.calculator-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+/* Title styling */
+h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+
+/* Container for input fields and labels */
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Stretch children to container width */
+  gap: 5px; /* Space between inputs */
+  margin-bottom: 10px; /* Space below inputs */
+}
+
+/* Container for weight-related inputs */
+.weights-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+
+/* Label styling */
+.weights-container label {
+  justify-content: end;
+  min-width: 50px; /* Ensure labels have a minimum width */
+}
+
+label {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Display for total weight and result */
+.total-weight-display,
+.result-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Button styling */
+button {
+  width: 100%; /* Full width button */
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #229799;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #48cfcb; /* Hover effect */
+}
+
+/* Custom checkbox styling */
+input[type="checkbox"] {
+  opacity: 0; /* Hide the default checkbox */
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* Target weight styling */
+.target-weight {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.target-weight input {
+  width: 60px;
+}
+
+/* Specific width for custom barbell input */
+#custom-barbell-input {
+  width: 170px;
+  position: absolute;
+  margin-left: 20px;
+}
+
+/* Container for all bar options checkboxes */
+.bar-options-container {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+/* Container for the custom checkbox and its label */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  position: relative;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+/* Custom appearance for the checkbox before being checked */
+.checkbox-container input[type="checkbox"] + label:before {
+  cursor: pointer;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+}
+
+/* Appearance of the checkbox when checked */
+.checkbox-container input[type="checkbox"]:checked + label:before {
+  background-color: #229799;
+  border-color: #229799;
+}
+
+/* Checkmark inside the custom checkbox when checked */
+.checkbox-container input[type="checkbox"]:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 38%;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) translateY(-50%);
+}
+
+/* Tooltip container for additional information */
+.tooltip {
+  display: flex;
+  align-items: center;
+}
+
+/* Hidden tooltip text initially */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position tooltip above the element */
+  left: 50%;
+  margin-left: -80px; /* Center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow pointing downwards */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip on hover */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

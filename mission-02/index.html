@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Weight Calculator</title>
+  </head>
+
+  <body>
+    <!-- Main container for the calculator -->
+    <div class="calculator-container">
+      <h1>Gym Weights Calculator</h1>
+
+      <!-- Container for user inputs related to weights selection -->
+      <div class="user-info-container">
+        <div class="inputs-container">
+          <!-- Title for the weights selection section -->
+          <div class="title-center">
+            <h4>Select your weights</h4>
+          </div>
+
+          <!-- Weight selection containers -->
+          <!-- Each container holds a label and a dropdown to select the number of plates -->
+          <div class="weights-container">
+            <label for="amount">20</label>
+            <select name="amount" id="twenty" class="amount-selector">
+              <option value="0">0</option>
+              <!-- Options for the number of plates -->
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <div class="weights-container">
+            <label for="amount">15</label>
+            <select name="amount" id="fifteen" class="amount-selector">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <div class="weights-container">
+            <label for="amount">10</label>
+            <select name="amount" id="ten" class="amount-selector">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <div class="weights-container">
+            <label for="amount">5</label>
+            <select name="amount" id="five" class="amount-selector">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <div class="weights-container">
+            <label for="amount">2.5</label>
+            <select name="amount" id="two-fifty" class="amount-selector">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <div class="weights-container">
+            <label for="amount">1.25</label>
+            <select name="amount" id="one-twentyfive" class="amount-selector">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <div class="weights-container">
+            <label for="amount">1</label>
+            <select name="amount" id="one" class="amount-selector">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <div class="weights-container">
+            <label for="amount">0.75</label>
+            <select name="amount" id="zero-seventyfive" class="amount-selector">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <div class="weights-container">
+            <label for="amount">0.5</label>
+            <select name="amount" id="zero-fifty" class="amount-selector">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <div class="weights-container">
+            <label for="amount">0.25</label>
+            <select name="amount" id="zero-twentyfive" class="amount-selector">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Button to calculate the total weight based on selected plates -->
+        <button class="total-weights-btn" id="total-weights-btn">
+          Total weight
+        </button>
+        <!-- Display the total weight result -->
+        <div class="total-weight-display"></div>
+      </div>
+
+      <!-- Divider line -->
+      <hr />
+
+      <!-- Container for the target weight input and calculation options -->
+      <div class="target-weight-container">
+        <!-- Input for the target weight in kgs -->
+        <div class="target-weight">
+          <label for="target-weight-input">Target weight in kg</label>
+          <input
+            type="number"
+            id="target-weight-input"
+            min="0"
+            placeholder="0"
+            required
+          />
+        </div>
+      </div>
+
+      <br />
+
+      <!-- Container for barbell options and weight distribution checkbox -->
+      <div class="bar-options-container">
+        <!-- Each checkbox allows the user to select a specific barbell or custom barbell -->
+        <div class="checkbox-container">
+          <input type="checkbox" id="olympic-barbell" />
+          <label for="olympic-barbell">Olympic Barbell (20kg)</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="standard-barbell" />
+          <label for="standard-barbell">Standard Barbell (15kg)</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="ez-curl-barbell" />
+          <label for="ez-curl-bar">Ez Curl Bar (10kg)</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="custom-barbell" />
+          <label></label>
+          <input
+            type="number"
+            id="custom-barbell-input"
+            placeholder="Custom barbell weight"
+            min="0"
+          />
+          <label for="custom-barbell">Cat</label>
+        </div>
+
+        <!-- Checkbox for even weight distribution with a tooltip -->
+        <div class="checkbox-container tooltip">
+          <input type="checkbox" id="weight-distribution" checked />
+          <label for="weight-distribution">Even weight distribution</label>
+          <span class="tooltiptext">
+            Evenly distributes the weight between the left and right of the bar
+          </span>
+        </div>
+      </div>
+
+      <!-- Button to calculate the plate combination for the target weight -->
+      <button id="calculate-btn">Calculate</button>
+      <!-- Display the result of the calculation -->
+      <div class="result-display"></div>
+    </div>
+  </body>
+</html>

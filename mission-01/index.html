@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Spy: Mushroom Edition</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Broswer Tab Icon -->
+    <link rel="icon" href="assets/mushroom.png" type="image/png">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap">
+    <!-- Icons -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+    <div class="falling-leaf-pattern">
+        <div class="main-container">
+            <div class="game-container">
+                <div class="game-scene">
+                    <!-- Clues Section -->
+                    <div class="clues">
+                        <h1>I Spy with My Little Eye...</h1>
+                        <ul>
+                            <li class="clue" id="clue-1">A <span>red</span> mushroom with white spots</li>
+                            <li class="clue" id="clue-2">A giant <span>yellow</span> mushroom</li>
+                            <li class="clue" id="clue-3">A tiny <span>blue</span> mushroom hidden in the grass</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Hidden Mushrooms -->
+                <div class="mushroom" id="mushroom-1">
+                    <img src="assets/red-mushroom.png" alt="Red mushroom with white spots">
+                </div>
+                <div class="mushroom" id="mushroom-2">
+                    <img src="assets/yellow-mushroom.png" alt="Giant yellow mushroom">
+                </div>
+                <div class="mushroom" id="mushroom-3">
+                    <img src="assets/blue-mushroom.png" alt="Tiny blue mushroom">
+                </div>
+            </div>
+
+            <div class="info-container">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>&#127812; Contact Me &#127812;</h2>
+                    <form action="mailto:samuelh@missionreadyhq.com" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+
+                <!-- About Me Section -->
+                <div class="about-me">
+                    <h2>&#127812; About Me &#127812;</h2>
+                    <p>
+                        Hi, I'm Sam.<br />
+                        I love creating interactive webpages and working on fun projects like this "I Spy" game.<br />
+                        I'm really enjoying learning to code and I hope you enjoy my first ever game.<br />
+                        Feel free to get in touch if you'd like to collaborate or you can see what I'm cooking up over
+                        on GitHub!.
+                    </p>
+                    <br />
+                    <br />
+                    <a href="https://github.com/samhmission" target="_blank">
+                        <i class="fa-brands fa-github fa-5x" style="color: #000000;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
