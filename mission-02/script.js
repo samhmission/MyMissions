@@ -28,6 +28,7 @@ const weightsData = [];
  * Returns the array of weights and amounts
  */
 function getWeightsData() {
+  weightsData.length = 0; // ~ Reset the weightsData array to an empty array
   const weightsContainers = document.querySelectorAll(".weights-container");
 
   weightsContainers.forEach((container) => {
@@ -174,3 +175,4 @@ calculateBtn.addEventListener("click", () => {
 });
 
 // TODO: fix bugs
+// reset total weight so it doesnt keep accumulating
