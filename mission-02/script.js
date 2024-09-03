@@ -136,6 +136,9 @@ calculateBtn.addEventListener("click", () => {
   }
 
   // ~ Get the best plate combinations and remaining weight
+  // ~ destructing assignment
+  // ~ This allows you to extract multiple properties from an object
+  // ~ (or elements from an array) and assign them to variables in a single statement
   const { plateCombinations, remainingWeight } =
     calculatePlateCombination(weightToDistribue);
 
