@@ -174,5 +174,4 @@ calculateBtn.addEventListener("click", () => {
   resultDisplay.innerHTML = resultText;
 });
 
-// TODO: fix bugs
-// reset total weight so it doesnt keep accumulating
+// TODO: fix bugs / center checkbox div
