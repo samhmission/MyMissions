@@ -172,3 +172,5 @@ calculateBtn.addEventListener("click", () => {
   // ~ Display the final result on the page
   resultDisplay.innerHTML = resultText;
 });
+
+// TODO: fix bugs
