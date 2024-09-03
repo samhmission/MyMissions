@@ -140,28 +140,30 @@ calculateBtn.addEventListener("click", () => {
     calculatePlateCombination(weightToDistribue);
 
   // ~ Build the result display text
-  let resultText = `Target Weight<br>${targetWeight}kg<br><br>Plate(s)<br>`;
-
-  // ~ Append each plate combination to the result text
-  plateCombinations.forEach((plate) => {
-    resultText += `${plate.amount} x ${plate.weight}kg<br>`;
-  });
+  let resultText = `Target Weight<br>${targetWeight}kg<br><br>`;
 
   // ~ If weight is distributed evenly, add a note
   if (distributeWeightEvenly) {
     resultText += `Note: Add the plate(s) to both sides<br><br>`;
   }
 
+  resultText += `Plate(s)<br>`;
+
+  // ~ Append each plate combination to the result text
+  plateCombinations.forEach((plate) => {
+    resultText += `${plate.amount} x ${plate.weight}kg<br>`;
+  });
+
   // ~ Display remaining weight if any, adjusting for even distribution
   if (remainingWeight > 0 && !distributeWeightEvenly) {
-    resultText += `Total weight remaining<br>${remainingWeight.toFixed(
+    resultText += `<br>Total weight remaining<br>${remainingWeight.toFixed(
       2
     )}kg<br>`;
   }
   if (remainingWeight > 0 && distributeWeightEvenly) {
-    resultText += `Total weight remaining<br>${(remainingWeight * 2).toFixed(
-      2
-    )}kg<br>`;
+    resultText += `<br>Total weight remaining<br>${(
+      remainingWeight * 2
+    ).toFixed(2)}kg<br>`;
   }
 
   // ~ Display the final result on the page
